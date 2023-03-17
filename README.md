@@ -1,6 +1,4 @@
-# RedWine-Analysis
-It is an experimental analysis of a red wine dataset in order to figure out the right amount of "features" that make uo its composition.
-The project consists of four parts.
-EDA where we find the distributions or correlations of the wines quality.
-PCA where we reduce the dimensionality.
-And a machine learning part.
+# Common Data Analysis and Projects
+In this repo, we will do a lot of work on common public datasets.
+This will include exploratory data analysis, data visualizations, and artificial intelligence implementations.
+Not excluding possible deployments.
