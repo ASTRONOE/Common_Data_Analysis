@@ -3,7 +3,7 @@ import diamonds as dd
 
 # create an instance of DiamondsPredictor
 dd.load_model('diamond_price_rf_reg.joblib')
-g
+
 # set the page title and description
 st.title("Diamonds Price Predictor")
 st.write("This app predicts the price of a diamond based on its characteristics.")
