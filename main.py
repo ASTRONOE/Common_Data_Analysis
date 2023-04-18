@@ -25,4 +25,4 @@ diam = {'cut': cut, 'color': color, 'clarity': clarity, 'carat': carat}
 
 predicted_price_rf = dd.rf_predict_price(diam)
 
-st.write('The price of this diamond is', predicted_price_rf)
+st.write('The price of this diamond is', round(predicted_price_rf, 2))
