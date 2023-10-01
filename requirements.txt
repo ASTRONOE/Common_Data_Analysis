@@ -1,5 +1,11 @@
 diamonds
 sklearn
+sklearn.model_selection
+sklearn.model_selection.cross_validate
+sklearn.preprocessing
+sklearn.preprocessing.OrdinalEncoder
+sklearn.ensemble
+sklearn.ensemble.RandomForestRegressor
 joblib
 streamlit
 pandas
