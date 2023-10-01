@@ -1,4 +1,3 @@
-diamonds
 scikit-learn
 joblib
 streamlit
