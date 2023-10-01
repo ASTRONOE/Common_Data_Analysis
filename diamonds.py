@@ -7,7 +7,7 @@ from sklearn.ensemble import RandomForestRegressor
 from joblib import dump, load
 
 
-df = pd.read_csv("https://raw.githubusercontent.com/ASTRONOE/Common_Data_Analysis/main/Kaggle/diamonds_1.csv")
+df = pd.read_csv("https://media.githubusercontent.com/media/ASTRONOE/Common_Data_Analysis/ma/diamonds_1.csv")
 df = df.drop(columns=['x', 'y', 'z', 'table', 'depth', 'volume'])
 encoder = OrdinalEncoder()
 rf = RandomForestRegressor(n_estimators=200, max_depth=15, random_state=42)
