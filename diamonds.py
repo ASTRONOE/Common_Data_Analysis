@@ -23,11 +23,11 @@ def rf_train():
   cross_validate(estimator=rf, X=X, y=y, cv=5)
 
 @st.cache_resource   
-def rf_predict_price(d):
-  features = [d['cut'], d['color'], d['clarity']]
+def rf_predict_price(diamond):
+  features = [diamond['cut'], diamond['color'], diamond['clarity']]
   d_encoded = encoder.transform([features])
-  d_encoded_ = np.concatenate((d_encoded, [[d['carat']]]), axis=1)
-  return np.exp(rf.predict(d_encoded_))[0]
+  d_encoded = np.concatenate((d_encoded, [[diamond['carat']]]), axis=1)
+  return np.exp(rf.predict(d_encoded))[0]
 
 def save_model(filename):
   dump(rf, filename)
